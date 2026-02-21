@@ -1,0 +1,21 @@
+acl "allowed_clients" {
+        //
+        127.0.0.1;        
+        ::1;       
+        localnets;     
+ };
+
+options {
+    directory "/var/cache/bind";
+
+    recursion no;       # Pas de résolution récursive
+
+    dnssec-validation auto;  # Vérifie les signatures DNSSEC
+
+    listen-on { any; };
+    listen-on-v6 { any; };
+
+    //allow-query { allowed_clients; };
+    allow-query { any; };
+};
+

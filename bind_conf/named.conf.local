@@ -1,0 +1,7 @@
+zone "infralab55.site" {
+    type master;
+    file "/etc/bind/db.infralab55.site";
+    allow-update { none; };
+    allow-transfer { none; };
+};
+

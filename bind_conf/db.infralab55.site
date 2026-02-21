@@ -1,0 +1,11 @@
+; BIND data file for infralab55.site
+$TTL    604800
+@       IN      SOA     dns-srv.infralab55.site. admin.infralab55.site. (
+                              5         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@               IN      NS      dns-srv.infralab55.site.
+dns-srv         IN      A       35.153.182.144
