@@ -1,7 +1,15 @@
+key "certbot-key" {
+	algorithm <hmac-xxx>;
+	secret "<tsig_key>";
+};
+
 zone "infralab55.site" {
     type master;
     file "/etc/bind/db.infralab55.site";
-    allow-update { none; };
     allow-transfer { none; };
+ 
+    update-policy {
+        grant certbot-key name _acme-challenge.infralab55.site. txt;
+    };
 };
 
