@@ -11,3 +11,5 @@ $TTL    604800
 dns-srv         IN      A       98.87.169.51
 @               IN      TXT     "v=spf1 -all"
 _dmarc          IN      TXT     "v=DMARC1; p=reject"
+$INCLUDE "Kinfralab55.site.+013+01026.key" ; public Key Signing Key
+$INCLUDE "Kinfralab55.site.+013+50916.key" ; public Zone Signing Key
