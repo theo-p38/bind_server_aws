@@ -5,7 +5,7 @@ key "certbot-key" {
 
 zone "infralab55.site" {
     type master;
-    file "/etc/bind/db.infralab55.site";
+    file "/etc/bind/db.infralab55.site.signed";
     allow-transfer { none; };
  
     update-policy {
