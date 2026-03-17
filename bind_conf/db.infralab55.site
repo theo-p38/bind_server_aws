@@ -1,7 +1,7 @@
 ; BIND data file for infralab55.site
 $TTL    604800
 @       IN      SOA     dns-srv.infralab55.site. admin.infralab55.site. (
-                              5         ; Serial
+                             16         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
